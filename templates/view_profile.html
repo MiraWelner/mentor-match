@@ -39,36 +39,56 @@
 
                 <!-- Dropdown -->   
                 <!-- need to create categories, options dicts or lists-->    
-                {% for c in categories %}
-                    <select id='selUser' style='width: 200px;'>
-                        <option value=0> -- Select Option -- </option>           
-                        {% for option in School %}
-                            <option value={{loop.index}}> {{option}} </option>           
-                        {% endfor %}
+                {% for cat in categories %}
+                    <select id='selUser' style='width: 200px;'>          
+                        {% if loop.index==1 %}
+                            {% for o in School %}
+                                <option value=loop.index> {{o}} </option>  
+                            {% endfor %}         
+                        {% endif %}
+                        {% if loop.index==2 %}
+                            {% for o in Class %}
+                                <option value=loop.index> {{o}} </option>  
+                            {% endfor %}         
+                        {% endif %}
+                        {% if loop.index==3 %}
+                            {% for o in Grade %}
+                                <option value=loop.index> {{o}} </option>  
+                            {% endfor %}         
+                        {% endif %}
+                        {% if loop.index==4 %}
+                            {% for o in Major %}
+                                <option value=loop.index> {{o}} </option>  
+                            {% endfor %}         
+                        {% endif %}
+                        {% if loop.index==5 %}
+                            {% for o in Intensity%}
+                                <option value=loop.index> {{o}} </option>  
+                            {% endfor %}         
+                        {% endif %}
                     </select>  
-
-                    <input type='button' value='Selected option' id='button_read'>
-
-                    <br/>
-                    <div id='result'></div>
-
-                    <!-- Dropdown Script -->
-                    <script>
-                    $(document).ready(function(){
-                        
-                        // Initialize select2
-                        $("#selUser").select2();
-
-                        // Read selected option
-                        $('#button_read').click(function(){
-                            var option = $('#selOption option:selected').text();
-                            var scoptionid = $('#selOption').val();
-                    
-                            $('#result').html("optionid : " + optionid + ", option : " + option);
-                        });
-                    });
-                    </script>
                 {% endfor %} 
+                <input type='button' value='Selected options' id='button_read'>
+
+                <br/>
+                <div id='result'></div>
+
+                <!-- Dropdown Script -->
+                <script>
+                $(document).ready(function(){
+                    
+                    // Initialize select2
+                    $("#selUser").select2();
+
+                    // Read selected option
+                    $('#button_read').click(function(){
+                        var option = $('#selOption option:selected').text();
+                        var scoptionid = $('#selOption').val();
+                
+                        $('#result').html("optionid : " + optionid + ", option : " + option);
+                    });
+                });
+                </script>
 
                 <!-- Card Class - want to make data variable -->
                 <div class="container">

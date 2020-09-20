@@ -14,11 +14,11 @@ def make():
     return render_template('make_profile.html')
 
 categories = ["School", "Class", "Grade", "Major", "Intensity"]
-School = ["UCLA","MIT", "UCD", "John Oliver Centennial Koala Chlamydia University"]
-Class = ["Chemistry", "Physics", "Multivariable Calculus", "Linear Algebra", "Circuits"]
-Grade = ["Freshman", "Sophomore", "Junior", "Senior"]
-Major= ["Electrical Engineering", "Computer Engineering", "Computer Science", "Philosophy"]
-Intensity = ["Low", "Medium", "High"]
+School = ["--School--","UCLA","MIT", "UCD", "John Oliver Centennial Koala Chlamydia University"]
+Class = ["--Class--","Chemistry", "Physics", "Multivariable Calculus", "Linear Algebra", "Circuits"]
+Grade = ["--Grade--","Freshman", "Sophomore", "Junior", "Senior"]
+Major = ["--Major--", "Electrical Engineering", "Computer Engineering", "Computer Science", "Philosophy"]
+Intensity = ["--Intensity--", "Low", "Medium", "High"]
 
 cards = [{"card_name": "dummy_name", "card_image": "https://i.pinimg.com/originals/ed/33/47/ed33475048bb9c5229245ca8847ee241.jpg", "card_description": "stuff from database"}]
 @app.route("/view_profile")
