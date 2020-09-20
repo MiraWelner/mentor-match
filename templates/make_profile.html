@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+          rel="stylesheet">
+    <title>Mentor Matching</title>
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-lava.css">
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+
+</head>
+
+<body>
+<!-- ***** Welcome Area End ***** -->
+<!-- ***** Footer Start ***** -->
+<footer id="contact-us">
+    <div class="container">
+        <div class="col-lg-6 col-md-12 col-sm-12" style="margin: auto;">
+            <div class="contact-form">
+                <form id="name-email" action="/submitName" method="post">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <fieldset>
+                                <input type="text" name="name" placeholder="Full Name" required
+                                       style="background-color: rgba(250,250,250,0.3);">
+                            </fieldset>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <fieldset>
+                                <input type="text" name="email" placeholder="Email" required
+                                       style="background-color: rgba(250,250,250,0.3);">
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-12">
+                            <fieldset>
+                                <button type="submit" id="name-form-submit" class="main-button">Submit</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="row">
+                <!-- ***** Contact Form Start ***** -->
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <h2>Study Buddy Profile</h2>
+                    <div class="contact-form">
+                        <form id="study-buddy" action="/submitStudy" method="post">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <fieldset>
+                                        <input type="text" name="sb-major" placeholder="What is Your Major?"
+                                               required=""
+                                               style="background-color: rgba(250,250,250,0.3);">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <fieldset>
+                                        <input type="text" name="sb-year" placeholder="What is Your Year?"
+                                               required=""
+                                               style="background-color: rgba(250,250,250,0.3);">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                            <textarea rows="6" name="sb-classes"
+                                                      placeholder="What Classes Are You Taking?"
+                                                      required=""
+                                                      style="background-color: rgba(250,250,250,0.3);"></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                            <textarea rows="6" name="sb-strengths"
+                                                      placeholder="What Are Your Strength and Weaknesses?"
+                                                      required=""
+                                                      style="background-color: rgba(250,250,250,0.3);"></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                            <textarea rows="6" name="sb-hardcore"
+                                                      placeholder="How intense are your study sessions?"
+                                                      required=""
+                                                      style="background-color: rgba(250,250,250,0.3);"></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <button type="submit" id="sb-form-submit" class="main-button">Submit</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- ***** Contact Form End ***** -->
+                <!-- ***** Contact Form Start ***** -->
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <h2>Mentor/Mentee Profile</h2>
+                    <div class="contact-form">
+                        <form id="m-contact" action="/submitMentor" method="post">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <fieldset>
+                                        <input type="text" name="m-age" placeholder="How Old Are You"
+                                               required=""
+                                               style="background-color: rgba(250,250,250,0.3);">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <fieldset>
+                                        <input type="text" name="m-location"
+                                               placeholder="Where are you From?"
+                                               required="" style="background-color: rgba(250,250,250,0.3);">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <fieldset>
+                                        <input type="text" name="m-major" placeholder="What's Your Major?"
+                                               required=""
+                                               style="background-color: rgba(250,250,250,0.3);">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <fieldset>
+                                        <input type="text" name="m-year" placeholder="What Year are You?"
+                                               required="" style="background-color: rgba(250,250,250,0.3);">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                            <textarea rows="6" name="m-excited"
+                                                      placeholder="What Are You Most Excited About or Like Most about College?"
+                                                      required=""
+                                                      style="background-color: rgba(250,250,250,0.3);"></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                            <textarea rows="6" name="m-nervous"
+                                                      placeholder="What Are You Most Nervous About or Like the Least about College??"
+                                                      required=""
+                                                      style="background-color: rgba(250,250,250,0.3);"></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                            <textarea rows="6" name="m-mentor"
+                                                      placeholder="If you are a mentee, what are you looking for in a mentor?"
+                                                      required=""
+                                                      style="background-color: rgba(250,250,250,0.3);"></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <button type="submit" id="m-form-submit" class="main-button">Submit</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- ***** Contact Form End ***** -->
+                <!-- ***** Contact Form Start ***** -->
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <h2>Friend Profile</h2>
+                    <div class="contact-form">
+                        <form id="f-contact" action="/submitFriend" method="post">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <fieldset>
+                                        <input type="text" name="f-age" placeholder="How Old Are You"
+                                               required=""
+                                               style="background-color: rgba(250,250,250,0.3);">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <fieldset>
+                                        <input type="text" name="f-facebook"
+                                               placeholder="Have a FaceBook?"
+                                               required=""
+                                               style="background-color: rgba(250,250,250,0.3);">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <fieldset>
+                                        <input type="text" name="f-major" placeholder="What's Your Major?"
+                                               required=""
+                                               style="background-color: rgba(250,250,250,0.3);">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <fieldset>
+                                        <input type="text" name="f-year" placeholder="What Year are You?"
+                                               required="" style="background-color: rgba(250,250,250,0.3);">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                            <textarea rows="6" name="f-classes"
+                                                      placeholder="What Are you Looking for in a friend?"
+                                                      required=""
+                                                      style="background-color: rgba(250,250,250,0.3);"></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <button type="submit" id="f-form-submit" class="main-button">Submit</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- ***** Contact Form End ***** -->
+                <!-- ***** Contact Form Start ***** -->
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <h2>Roommate Profile</h2>
+                    <div class="contact-form">
+                        <form id="r-contact" action="/submitRoom" method="post">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <fieldset>
+                                        <input type="text" name="r-age" placeholder="How Old Are You"
+                                               required=""
+                                               style="background-color: rgba(250,250,250,0.3);">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <fieldset>
+                                        <input type="text" name="r-gender"
+                                               placeholder="What is Your Gender?"
+                                               required="" style="background-color: rgba(250,250,250,0.3);">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <fieldset>
+                                        <input type="text" name="r-major"
+                                               placeholder="What time to you sleep?"
+                                               required=""
+                                               style="background-color: rgba(250,250,250,0.3);">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <fieldset>
+                                        <input type="text" name="r-year"
+                                               placeholder="What time do you get up?"
+                                               required="" style="background-color: rgba(250,250,250,0.3);">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                            <textarea rows="6" name="should-know"
+                                                      placeholder="Anything a roommate should know about you?"
+                                                      required=""
+                                                      style="background-color: rgba(250,250,250,0.3);"></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <button type="submit" id="r-form-submit" class="main-button">Submit</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- ***** Contact Form End ***** -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="sub-footer">
+                    <p>Copyright &copy; 2020 Lava Landing Page
+
+                        | Designed by <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="assets/js/jquery-2.1.0.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- Plugins -->
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/scrollreveal.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/imgfix.min.js"></script>
+
+<!-- Global Init -->
+<script src="assets/js/custom.js"></script>
+
+</body>
+</html>
