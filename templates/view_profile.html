@@ -42,7 +42,7 @@
                 {% for c in categories %}
                     <select id='selUser' style='width: 200px;'>
                         <option value=0> -- Select Option -- </option>           
-                        {% for option in {{c}} %}
+                        {% for option in School %}
                             <option value={{loop.index}}> {{option}} </option>           
                         {% endfor %}
                     </select>  

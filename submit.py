@@ -13,9 +13,17 @@ def root():
 def make():
     return render_template('make_profile.html')
 
-@app.route('/view_profile')
+categories = ["School", "Class", "Grade", "Major", "Intensity"]
+School = ["UCLA","MIT", "UCD", "John Oliver Centennial Koala Chlamydia University"]
+Class = ["Chemistry", "Physics", "Multivariable Calculus", "Linear Algebra", "Circuits"]
+Grade = ["Freshman", "Sophomore", "Junior", "Senior"]
+Major= ["Electrical Engineering", "Computer Engineering", "Computer Science", "Philosophy"]
+Intensity = ["Low", "Medium", "High"]
+
+cards = [{"card_name": "dummy_name", "card_image": "https://i.pinimg.com/originals/ed/33/47/ed33475048bb9c5229245ca8847ee241.jpg", "card_description": "stuff from database"}]
+@app.route("/view_profile")
 def view():
-    return render_template('view_profile.html')    
+    return render_template("view_profile.html", categories=categories, School=School, Class=Class, Grade=Grade, Major=Major, Intensity=Intensity, cards=cards)  
 
 @app.route('/view_matches')
 def match():
